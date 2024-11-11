@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:padding="10dp"
+    android:background="#E8F5E9"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Aplikasi Perhitungan Gaji"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:textColor="#1E88E5"
+        android:layout_marginBottom="16dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:background="#FFFFFF"
+        android:elevation="4dp"
+        android:layout_margin="16dp">
+
+
+        <EditText
+            android:id="@+id/inputNama"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Masukkan Nama Anda"
+            android:textColorHint="#BDBDBD"
+            android:layout_marginBottom="8dp" />
+
+        <CheckBox
+            android:id="@+id/statusMenikah"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Menikah"
+            android:layout_marginBottom="8dp" />
+
+        <RadioGroup
+            android:id="@+id/golonganGroup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/golongan1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Golongan 1" />
+
+            <RadioButton
+                android:id="@+id/golongan2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Golongan 2"
+                android:layout_marginStart="16dp" />
+        </RadioGroup>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnHitungGaji"
+        android:layout_width="385dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:backgroundTint="#1E88E5"
+        android:paddingHorizontal="32dp"
+        android:text="Hitung Gaji"
+        android:textColor="#FFFFFF" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:background="#FFFFFF"
+        android:elevation="4dp"
+        android:layout_margin="16dp">
+
+        <TextView
+            android:id="@+id/gajiPokok"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Gaji Pokok : "
+            android:textSize="16sp"
+            android:layout_marginBottom="4dp" />
+
+        <TextView
+            android:id="@+id/tunjangan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tunjangan : "
+            android:textSize="16sp"
+            android:layout_marginBottom="4dp" />
+
+        <TextView
+            android:id="@+id/totalGaji"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Total Gaji : "
+            android:textSize="16sp" />
+    </LinearLayout>
+</LinearLayout>
+
